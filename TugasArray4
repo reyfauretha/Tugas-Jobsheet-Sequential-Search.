@@ -1,0 +1,45 @@
+package TugasPratikum;
+
+import java.util.Scanner;
+
+public class TugasArray4 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int a, i, u, e, o;
+        a = 0;
+        i = 0;
+        u = 0;
+        e = 0;
+        o = 0;
+        String nilai, data = new String();
+
+        System.out.print("Masukkan kalimat atau kata : ");
+        data = input.nextLine();
+        char tchar[] = new char[data.length()];
+        nilai = data.toLowerCase();
+        for (int x = 0; x < data.length(); x++) {
+            if (nilai.charAt(x) == 'a') {
+                a++;
+            }
+            if (nilai.charAt(x) == 'i') {
+                i++;
+            }
+            if (nilai.charAt(x) == 'u') {
+                u++;
+            }
+            if (nilai.charAt(x) == 'e') {
+                e++;
+            }
+            if (nilai.charAt(x) == 'o') {
+                o++;
+            }
+        }
+        System.out.println("a = " + a);
+        System.out.println("i = " + i);
+        System.out.println("u = " + u);
+        System.out.println("e = " + e);
+        System.out.println("o = " + o);
+        System.out.println("Total = " + (a + i + u + e + o));
+    }
+}
