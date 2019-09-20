@@ -1,0 +1,27 @@
+package LatihanPratikum;
+import java.util.Scanner;
+public class LatihanPratikum1 {
+
+    
+    public static void main(String[] args) {
+        String mencari;
+        boolean found = false;
+        String[]hewan = new String[]{"kucing","anjing","beruang","penguin"};
+        Scanner input = new Scanner(System.in);
+        System.out.print("Hewan yang ingin dicari :");
+        mencari = input.nextLine();
+        for(String hewan1 : hewan){
+            if (mencari.equals(hewan1)){
+                found = true;
+                break;
+            }
+            if (found == true){
+                System.out.println("hewan ada!!!");
+                
+            }else{
+                System.out.println("hewan tidak ditemukan!!!");
+            }
+        }
+    }
+    
+}
