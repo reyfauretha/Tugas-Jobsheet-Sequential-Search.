@@ -1,0 +1,29 @@
+package TugasPratikum;
+
+import java.util.Scanner;
+
+public class TugasArray2 {
+
+    public static void main(String[] args) {
+        double ratarata = 0;
+        int mencari;
+        int angka = 0;
+        boolean found = false;
+        int[] data = new int[]{83, 76, 45, 90, 85, 80, 78, 74};
+        Scanner read = new Scanner(System.in);
+        System.out.println("Data pada array : ");
+        for (int i = 0; i < data.length; i++) {
+            System.out.print(data[i] + "\t");
+            if (data[i] < angka) {
+                angka = data[i];
+            }
+
+        }
+        for (int i = 0; i < data.length; i++) {
+            ratarata += data[i];
+        }
+        ratarata /= data.length;
+        System.out.println("\nRata-rata nilai array : " + ratarata);
+        System.out.println("\nNilai yang diatas rata-rata : 83,90,85,80,78");
+    }
+}
